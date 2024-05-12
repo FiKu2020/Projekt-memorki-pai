@@ -8,18 +8,23 @@ const Timer = () => {
     setCurrentTime(0);
   };
   useEffect(() => {
+    let intervalId;
     if (isClockRunning == true) {
-      setCurrentTime((currentTime) => currentTime + 1);
+      intervalId = setInterval(() => {
+        setCurrentTime((currentTime) => currentTime + 1);
+      }, 1000);
     }
-    1000;
-    const timeCalc = (currentTime) =>{
-      const minutes = []
-      const seconds = []
-    }
-  });
+    return clearInterval(intervalId);
+  }, [isClockRunning]);
+  const formatTime = (time) => {
+    const minutes = Math.floor(time / 60);
+    const seconds = time % 60;
+    return minutes,seconds
+  };
+
   return (
     <div className="timer">
-      <h3>current time:{currentTime}</h3>
+      <h3>current time:{formatTime(currentTime)}</h3>
       <button onClick={() => setIsClockRunning(!isClockRunning)}>
         {isClockRunning ? "pauza" : "start"}
       </button>
