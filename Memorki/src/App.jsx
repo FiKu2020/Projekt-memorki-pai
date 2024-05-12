@@ -1,16 +1,18 @@
 import "./App.css";
-import { Route, Router, Routes } from "react-router-dom";
+import { Route, BrowserRouter,Router, Routes } from "react-router-dom";
 import WelcomeScreen from "./Components/WelcomeScreen/WelcomeScreen";
 import GameBoard from "./Components/GameBoard/GameBoard";
 
 const App = () => {
   return (
-    <Router>
-      <Routes>
-        <Route />
-        <Route />
-      </Routes>
-    </Router>
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="" element={<WelcomeScreen />} />
+          <Route path="/game" element={<GameBoard />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 };
 

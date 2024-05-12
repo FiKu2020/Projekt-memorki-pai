@@ -6,8 +6,6 @@ import GameBoard from "./Components/GameBoard/GameBoard.jsx";
 import WelcomeScreen from "./Components/WelcomeScreen/WelcomeScreen.jsx";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <App>
-      <WelcomeScreen />
-    </App>
+    <App />
   </React.StrictMode>
 );
