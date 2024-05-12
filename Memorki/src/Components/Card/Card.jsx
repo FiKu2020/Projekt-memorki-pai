@@ -1,14 +1,13 @@
 import { useEffect, useState } from "react";
+import PropTypes from "prop-types";
 import memorki from "../../resources/memorki.json";
 const Card = (props) => {
   const { src, id, description, name } = props;
   const [isMatched, setIsMatched] = useState(false);
   const [isFlipped, setIsFlipped] = useState(false);
 
-  const handleClick = () => {
-    
-  };
-  useEffect(()=>{})
+  const handleClick = () => {};
+  useEffect(() => {});
   return (
     <div className="card">
       <img src={src} alt="temp" />

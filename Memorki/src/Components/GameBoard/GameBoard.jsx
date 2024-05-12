@@ -9,5 +9,4 @@ const GameBoard = (props) => {
     </div>
   );
 };
-Flashcards.propTypes = {};
 export default GameBoard;
