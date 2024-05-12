@@ -5,10 +5,12 @@ import GameBoard from "./Components/GameBoard/GameBoard";
 
 const App = () => {
   return (
-    <Routes>
-      <Route path="/" element={<WelcomeScreen />} />
-      <Route path="/game" element={<GameBoard />} />
-    </Routes>
+    <Router>
+      <Routes>
+        <Route />
+        <Route />
+      </Routes>
+    </Router>
   );
 };
 

@@ -1,1 +1,0 @@
-# Projekt-memorki-pai
