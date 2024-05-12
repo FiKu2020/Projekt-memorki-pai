@@ -10,12 +10,15 @@ const Timer = () => {
   useEffect(() => {
     if (isClockRunning == true) {
       setCurrentTime((currentTime) => currentTime + 1);
-    } 1000;
+    }
+    1000;
   });
   return (
     <div className="timer">
       <h3>current time:{currentTime}</h3>
-      <button ></button>
+      <button onClick={() => setIsClockRunning(!isClockRunning)}>
+        {isClockRunning ? "pauza" : "start"}
+      </button>
       <button onClick={resetTime}>reset time</button>
     </div>
   );
