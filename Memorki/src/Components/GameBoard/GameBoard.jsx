@@ -1,9 +1,13 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
 import Card from "../Card/Card";
-const Flashcards = (props) => {
-  const [isGameActive,setIsGameActive] = useState(true)
-  return (<div></div>)
-}
+const GameBoard = (props) => {
+  const [isGameActive, setIsGameActive] = useState(true);
+  return (
+    <div>
+      <Card />
+    </div>
+  );
+};
 Flashcards.propTypes = {};
-export default Flashcards;
+export default GameBoard;
