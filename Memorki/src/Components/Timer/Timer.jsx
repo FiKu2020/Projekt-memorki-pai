@@ -12,6 +12,10 @@ const Timer = () => {
       setCurrentTime((currentTime) => currentTime + 1);
     }
     1000;
+    const timeCalc = (currentTime) =>{
+      const minutes = []
+      const seconds = []
+    }
   });
   return (
     <div className="timer">
